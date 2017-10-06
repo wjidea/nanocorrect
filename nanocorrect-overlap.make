@@ -37,7 +37,7 @@ HPCcommands.txt: $(NAME).db
 #
 $(NAME).las: HPCcommands.txt
 	/bin/bash $^
-	LAcat $(NAME) > $@
+	LAcat $(NAME).#.las > $@
 	rm $(NAME).*.las
 
 #
